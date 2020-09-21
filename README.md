@@ -2,7 +2,7 @@
 
 Shipment Tracking - For Tracking Deliveries in FrontAccounting
 
-[Forum Discussion](http://frontaccounting.com/punbb/viewtopic.php?id=7749)
+[Forum Discussion](https://frontaccounting.com/punbb/viewtopic.php?id=9012)
 
 Requirements
 ------------

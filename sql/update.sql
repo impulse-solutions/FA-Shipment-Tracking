@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `0_shipments`;
 
 CREATE TABLE `0_shipments` (
-  `shipment_id` int(11) NOT NULL AUTO_INCREMENT;
+  `shipment_id` int(11) NOT NULL AUTO_INCREMENT,
   `trans_no` int(11) NOT NULL DEFAULT '0',
   `type` smallint(6) UNSIGNED NOT NULL DEFAULT '0',
   `shipment_date` date NOT NULL DEFAULT '0000-00-00',

@@ -6,7 +6,8 @@ Provides logistic solutions for deliverable package, so shipping status is alway
 
 `No FrontAccounting Core files or database table modified`
 
-## Features
+Features
+------------
 - Enter AWB / Tracking Number.
 - Enter vehicle number.
 - Enter number of packaged and dispatch.
@@ -19,7 +20,8 @@ Provides logistic solutions for deliverable package, so shipping status is alway
 Download module file place it in folder **shipments** in modules folder
 ```
 
-# FrontAccounting Forum 
+FrontAccounting Forum
+------------
 see [Discussion](https://frontaccounting.com/punbb/viewtopic.php?id=9012)
 
 Requirements

@@ -10,7 +10,7 @@ Features
 ------------
 - Enter AWB / Tracking Number.
 - Enter vehicle number.
-- Enter number of packaged and dispatch.
+- Enter number of deliverable packaged and dispatch.
 - Enter actual frieght paid.
 - Mark your invoice with status such as "In Transist", "Delivered"
 - Print invoice directly from shipment tracking window

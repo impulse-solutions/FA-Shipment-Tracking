@@ -7,13 +7,13 @@ Provides logistic solutions for deliverable package, so shipping status is alway
 `No FrontAccounting Core files or database table modified`
 
 ## Features
-Enter AWB / Tracking Number.
-Enter vehicle number.
-Enter number of packaged and dispatch.
-Enter actual frieght paid.
-Mark your invoice with status such as "In Transist", "Delivered"
-Print invoice directly from shipment tracking window
-Print Report
+- Enter AWB / Tracking Number.
+- Enter vehicle number.
+- Enter number of packaged and dispatch.
+- Enter actual frieght paid.
+- Mark your invoice with status such as "In Transist", "Delivered"
+- Print invoice directly from shipment tracking window
+- Print Report
 
 ```sh
 Download module file place it in folder **shipments** in modules folder

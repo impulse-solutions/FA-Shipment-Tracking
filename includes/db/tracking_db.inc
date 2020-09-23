@@ -16,6 +16,7 @@ function add_shipment($shipment_document, $shipment_via, $shipment_date, $shipme
 	$sql = "INSERT INTO ".TB_PREF."shipments (trans_no, type, shipment_date, shipment_tracking_no, shipment_vehicle_no, shipment_eway_bill, shipment_package, abbr, shipment_freight, shipment_status) VALUES (".db_escape($trans_no).", ".db_escape($type).", ".db_escape($date).", ".db_escape($shipment_tracking_no).", ".db_escape($shipment_vehicle_no).", ".db_escape($shipment_eway_bill).", ".db_escape($shipment_package).", ".db_escape($abbr).", ".db_escape($shipment_freight).", ".db_escape($shipment_status).")";
 	
    	db_query($sql,"The Shipment could not be added");
+   	update_ship_via($trans_no, $type, $shipment_via);
 }
 
 function update_shipment($shipment_id,$shipment_document,$shipment_via,$shipment_date,$shipment_tracking_no,$shipment_vehicle_no,$shipment_eway_bill,$shipment_package,$abbr,$shipment_freight,$shipment_status)
@@ -28,6 +29,14 @@ function update_shipment($shipment_id,$shipment_document,$shipment_via,$shipment
 
     $sql .= " WHERE shipment_id = ".db_escape($shipment_id);                                   
    db_query($sql,"The Shipment could not be updated");
+   update_ship_via($trans_no, $type, $shipment_via);
+}
+
+function update_ship_via($trans_no, $type, $shipment_via)
+{
+    $sql = "UPDATE ".TB_PREF."debtor_trans SET ship_via=".db_escape($shipment_via);
+    $sql .= " WHERE trans_no = ".db_escape($trans_no)." AND type = ".db_escape($type);
+    db_query($sql,"The Shipping Company could not be updated");
 }
 
 function delete_shipment($shipment_id)

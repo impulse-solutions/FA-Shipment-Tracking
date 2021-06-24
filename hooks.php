@@ -6,18 +6,18 @@
     Email: contact@impulsesolutions.in
 =====================================================================*/
 
-define ('IMPULSE_SHIPMENTS', 251<<8);
+define ('IMPULSE_SHIPMENT_TRACKING', 251<<8);
 
 
-class hooks_shipments extends hooks {
+class hooks_shipment_tracking extends hooks {
 
 	function __construct() {
-		$this->module_name = 'shipments';
+		$this->module_name = 'shipment_tracking';
 	}
 	
 	function install_access() {
-		$security_sections[IMPULSE_SHIPMENTS] =  _("Shipments");
-        $security_areas['PULSE_TRACKING'] = array(IMPULSE_SHIPMENTS|1, _('Tracking Information'));
+		$security_sections[IMPULSE_SHIPMENT_TRACKING] =  _("Shipment Tracking");
+        $security_areas['PULSE_TRACKING'] = array(IMPULSE_SHIPMENT_TRACKING|1, _('Tracking Information'));
         return array($security_areas, $security_sections);
 	}
 
